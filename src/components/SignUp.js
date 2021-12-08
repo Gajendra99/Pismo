@@ -16,7 +16,7 @@ const SignUp = () => {
         e.preventDefault();
         if(username && name && email && mobile && password && password2)
         {   
-            if(password == password2){
+            if(password === password2){
                 alert('data submited');
                 setPassword('');
                 setUsername('');
