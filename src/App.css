@@ -1,38 +1,115 @@
-.App {
+:root {
+  --primaryColor: #61dafb;
+  --secondaryColor: #282c34;
+  --bgPrimaryColor: #fff;
+  --bgSecondaryColor: #000;
+  --txtPrimaryColor: #fff;
+  --txtSecondaryColor: #000;
+  --bodyBgColor: #dedede;
+}
+
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+body {
+  width: cover;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  overflow-x: hidden;
+  background-color: var(--bodyBgColor);
+  color: var(--secondaryColor);
   text-align: center;
+  -ms-overflow-style: block; /* IE and Edge */
+  scrollbar-width: block; /* Firefox */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body::-webkit-scrollbar {
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:focus {
+  outline: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar {
+  width: cover;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: var(--secondaryColor);
+  color: var(--txtPrimaryColor);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.logo {
+}
+
+.nav-links {
+  width: 25%;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  vertical-align: middle;
+}
+
+.link {
+  list-style-type: none;
+  margin-top: 4px;
+}
+
+.icon {
+  font-size: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-wrapper {
+  width: 35%;
+  margin: 5vw auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  padding: 7px 17px;
+  font-size: 15px;
+  border: 0px;
+  margin: 15px auto;
+  border-radius: 15px 15px 15px 15px;
+}
+.form-wrapper form {
+  padding: 50px 0px;
+  background-color: var(--secondaryColor);
+  color: var(--txtPrimaryColor);
+  border-radius: 25px 25px 25px 25px;
+}
+
+.form-logo {
+  font-size: 30px;
+}
+
+.form-wrapper form input {
+  display: block;
+  width: 70%;
+  height: 2vw;
+  padding: 5px 8px;
+  margin: 20px auto;
+  font-size: 1.2vw;
+  border-radius: 15px 15px 15px 15px;
+  border: 0px;
+}
+
+.form-wrapper form button {
+  display: block;
+  font-weight: bold;
+  background-color: var(--bgPrimaryColor);
+}
+
+.form-wrapper form p {
+  display: bock;
+  margin: 10px auto;
+  font-size: 13px;
+  color: white;
+}
+
+.link-text {
+  color: white;
 }
