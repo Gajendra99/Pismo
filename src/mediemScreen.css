@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-wrapper {
+    width: 50%;
+    margin: 6vw auto;
+  }
+  .form-wrapper form input {
+    font-size: 1.4vw;
+  }
+  .nav-links {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-wrapper {
+    width: 90%;
+    margin: 1vw auto;
+    margin-top: 15vw;
+  }
+  .form-wrapper form input {
+    font-size: 2.5vw;
+    height: 5vw;
+  }
+  .nav-links {
+    width: 50%;
+  }
+}
